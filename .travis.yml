@@ -8,3 +8,8 @@ services:
 
 before_script:
   - echo "USE mysql;\nUPDATE user SET password=PASSWORD('root') WHERE user='root';\nFLUSH PRIVILEGES;\n" | mysql -u root
+
+  cache:
+    directories:
+    - .autoconf
+    - $HOME/.m2
