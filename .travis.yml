@@ -1,3 +1,4 @@
 language: java
 
-mvn test -B -Dmaven.javadoc.skip=true
+jdk:
+  - oraclejdk8
